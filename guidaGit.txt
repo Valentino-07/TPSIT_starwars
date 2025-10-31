@@ -1,8 +1,11 @@
 STEPS:
+PRIMA DI TOCCARE IL CODICE FAI UNA
 1)git pull 
+QUANDO HAI SCRITTO QUALCOSA E NON SEI TROPPO SICURO O NON HAI FINITO 
 2)git add .
 3)git commit -m "messaggio"
-4)git psuh
+QUANDO SEI SICURO FAI LA 
+4)git push
 
 EXTRA:
 se da errori con "git push" usa prima "git stash" e poi "git push"
