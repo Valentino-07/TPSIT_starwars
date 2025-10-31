@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-wrap: wrap; /* fa andare le foto a capo dopo due */
+  justify-content: center; /* centra tutto */
+  gap: 15px; /* spazio tra le foto */
+}
+
+.foto {
+  flex: 1 0 45%; /* ogni div-foto occupa ~45% -> 2 per riga */
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%; /* riempie il div */
+  max-width: 300px; /* limite massimo */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
