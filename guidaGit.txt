@@ -8,4 +8,4 @@ QUANDO SEI SICURO FAI LA
 4)git push
 
 EXTRA:
-se da errori con "git push" usa prima "git stash" e poi "git push"
+se da errori con "git push" usa prima "git stash" e poi "git push"!
