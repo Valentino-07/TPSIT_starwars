@@ -11,11 +11,14 @@ fetch("https://swapi.dev/api/vehicles/")
 document.getElementById("btn1").addEventListener("click", () => mostraDettagliVeicolo("AT-AT"));
 document.getElementById("btn2").addEventListener("click", () => mostraDettagliVeicolo("AT-ST"));
 document.getElementById("btn3").addEventListener("click", () => mostraDettagliVeicolo("Sand Crawler"));
-document.getElementById("btn4").addEventListener("click", () => mostraDettagliVeicolo("T-16 skyhopper"));
+document.getElementById("btn4").addEventListener("click", () => mostraDettagliVeicolo("Sail barge"));
 document.getElementById("btn5").addEventListener("click", () => mostraDettagliVeicolo("Snowspeeder"));
-document.getElementById("btn6").addEventListener("click", () => mostraDettagliVeicolo(""));
-document.getElementById("btn7").addEventListener("click", () => mostraDettagliVeicolo(""));
-document.getElementById("btn8").addEventListener("click", () => mostraDettagliVeicolo(""));
+document.getElementById("btn6").addEventListener("click", () => mostraDettagliVeicolo("Storm IV Twin-Pod cloud car"));
+document.getElementById("btn7").addEventListener("click", () => mostraDettagliVeicolo("TIE/LN starfighter"));
+document.getElementById("btn8").addEventListener("click", () => mostraDettagliVeicolo("T-16 skyhopper"));
+document.getElementById("btn9").addEventListener("click", () => mostraDettagliVeicolo("TIE bomber"));
+document.getElementById("btn10").addEventListener("click", () => mostraDettagliVeicolo("X-34 landspeeder"));
+
 
 function mostraDettagliVeicolo(nome_veicolo){
 
