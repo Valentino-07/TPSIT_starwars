@@ -52,7 +52,7 @@ function mostraDettagliVeicolo(nome_veicolo){
       stringa+="<th>films<\/th>";
       stringa+="<\/tr>";
       for(let i=0; i<data.results.length; i++){
-        if(data.results[i].name===nome_veicolo){
+        if(data.results[i].name==nome_veicolo){
           stringa+="<tr><\/tr>";
           stringa+="<td>"+data.results[i].name+"<\/td>";
           stringa+="<td>"+data.results[i].model+"<\/td>";
