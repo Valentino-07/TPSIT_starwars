@@ -1,7 +1,7 @@
 /*parte Vale
 name, model, length, manufacturer, crew, passengers, vehicle_class, films
 */
-
+/*
 fetch("https://swapi.dev/api/vehicles/")
 .then(response => response.json())
 .then(data => {
@@ -56,4 +56,4 @@ function mostraDettagliVeicolo(nome_veicolo){
   });
 }
 //dobbiamo avere i dati del veicolo per mandarli a "dettagli.html"
-
+*/
