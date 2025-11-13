@@ -23,7 +23,6 @@ document.getElementById("btn10").addEventListener("click", () => mostraDettagliV
 let stringa="";
 
 function mostraDettagliVeicolo(nome_veicolo){
-  <script>
   $(document).ready(function () {
     $.get("https://swapi.dev/api/vehicles/?page=1", function(data){
       stringa+="<table>";
@@ -37,7 +36,7 @@ function mostraDettagliVeicolo(nome_veicolo){
       stringa+="<th>vehicle_class<\/th>";
       stringa+="<th>films<\/th>";
       stringa+="<\/tr>";
-      for(let i=0; i<data.results; i++){
+      for(let i=0; i<data.results.length; i++){
         if(data.results[i].name===nome_veicolo){
           stringa+="<tr><\/tr>";
           stringa+="<td>"+data.results[i].name+"<\/td>";
@@ -55,7 +54,6 @@ function mostraDettagliVeicolo(nome_veicolo){
     }
     )
   });
-</script>
 }
 //dobbiamo avere i dati del veicolo per mandarli a "dettagli.html"
 
