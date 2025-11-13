@@ -6,6 +6,44 @@
     <title>AT AT</title>
 </head>
 <body>
-    
+    <div id="risultato"></div>
 </body>
 </html>
+<script>
+let stringa="";
+fetch("https://swapi.dev/api/vehicles/")
+.then(response => response.json())
+.then(data => {
+    console.log(data.results); // array di veicoli
+  })
+  $(document).ready(function () {
+    
+      stringa+="<table>";
+      stringa+="<tr>";
+      stringa+="<th>name<\/th>";
+      stringa+="<th>model<\/th>";
+      stringa+="<th>length<\/th>";
+      stringa+="<th>manufacturer<\/th>";
+      stringa+="<th>crew<\/th>";
+      stringa+="<th>passengers<\/th>";
+      stringa+="<th>vehicle_class<\/th>";
+      stringa+="<th>films<\/th>";
+      stringa+="<\/tr>";
+      for(let i=0; i<data.results.length; i++){
+        if(data.results[i].name=="AT-AT"){
+          stringa+="<tr><\/tr>";
+          stringa+="<td>"+data.results[i].name+"<\/td>";
+          stringa+="<td>"+data.results[i].model+"<\/td>";
+          stringa+="<td>"+data.results[i].length+"<\/td>";
+          stringa+="<td>"+data.results[i].manufacturer+"<\/td>";
+          stringa+="<td>"+data.results[i].crew+"<\/td>";
+          stringa+="<td>"+data.results[i].passengers+"<\/td>";
+          stringa+="<td>"+data.results[i].vehicle_class+"<\/td>";
+          stringa+="<td>"+data.results[i].films+"<\/td>";
+          stringa+="<\/tr>";
+        }
+      }
+      $("#risultato").html(stringa);
+    }
+    )
+</script>
