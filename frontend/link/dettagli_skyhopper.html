@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>T-16 Skyhopper</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <style>
       body {
         font-family: "Arial", sans-serif;
@@ -17,45 +18,73 @@
         padding: 20px;
       }
 
-      /* titolo centrale in alto */
+      /* titolo cliccabile */
       #top-image {
         text-align: center;
         margin-bottom: 30px;
       }
 
-      #top-image img {
-        width: 350px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      #top-image a {
+        display: inline-block;
+        text-decoration: none;
       }
 
+      #top-image img {
+        width: 350px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      #top-image img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+      }
+
+      /* CARD LIQUID GLASS */
       #container {
         max-width: 900px;
         margin: 0 auto;
         display: flex;
         gap: 20px;
         align-items: flex-start;
-        background-color: transparent;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(15px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
         padding: 20px;
-        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
+      #container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      /* FOTO */
       #foto {
         flex: 1;
       }
 
       #foto img {
         width: 100%;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
+      #foto img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      /* INFO */
       #info {
         flex: 2;
         overflow-x: auto;
       }
 
-      p {
+      #info p {
         margin: 8px 0;
         font-size: 16px;
       }
@@ -69,9 +98,11 @@
   </head>
 
   <body>
-    <!-- titolo centrale -->
+    <!-- titolo cliccabile per tornare indietro -->
     <div id="top-image">
-      <img src="../../images/titolo.png" alt="T-16 Skyhopper" />
+      <a href="../index.html">
+        <img src="../../images/titolo.png" alt="T-16 Skyhopper" />
+      </a>
     </div>
 
     <div id="container">
